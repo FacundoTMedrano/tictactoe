@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Grape Nuts', cursive;
+}
+body{
+    background-color: green;
+}
+#reset{
+    background-color: rgb(204, 204, 204);
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-top: 25px;
+    border: 1px solid transparent;
+    box-shadow: 3px 3px;
+}
+#reset:active{
+    box-shadow: none;
+    border: 1px solid black;
+}
+
+#resultado{
+    display: none;
+    color: whitesmoke;
+    font-size: 60px;
+}
+.juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#tablero{
+    border: none;
+    display: grid;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+#tablero div{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
